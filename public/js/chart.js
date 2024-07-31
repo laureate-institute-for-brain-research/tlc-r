@@ -2068,14 +2068,14 @@ function drawEventsChart() {
                 // console.log('bLoc: ' + pointB)
 
                 finallinewidthpx = pointB - interface.getXLocation(age) // Filtered Duration Line
-                line.style.width = finallinewidthpx + "px";
+                line.style.width = (finallinewidthpx - 5) + "px";
 
                 // console.log(interface.getYLocation(currentrating))
                 line.style.display = 'block';
                 line.style.background = getColorFromRating(parseInt(currentrating)) + "AA"
 
                 line.style.position = "absolute";
-                line.style.borderRadius = "0.9rem"
+                line.style.borderRadius = "1rem"
                 line.style.left = interface.getXLocation(age) + "px";
                 line.style.top = interface.getYLocation(currentrating) + "px";
                 line.style.height = '5px'

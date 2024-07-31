@@ -221,6 +221,8 @@ div.google-visualization-tooltip > ul > li > span {
   -moz-animation: dude 0.45s 1 forwards;
   -o-animation: dude 0.45s 1 forwards;
   animation: dude 0.45s 1 forwards;
+  background: rgba(0, 0, 0, 0.005) !important;
+  height: 0.8rem !important;
 }
 
 @-webkit-keyframes dude {
