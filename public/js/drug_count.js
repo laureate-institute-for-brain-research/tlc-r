@@ -22,7 +22,7 @@ $(document).ready( () => {
   if (subject == 'NULL'){
     $('#subjectLabel').hide();
   } else {
-    $("#nav-title").attr('href', '/tlc')
+    $("#nav-title").attr('href', '/tlc-r')
 
     $('#homenav').text(subject.toUpperCase());
     $('#homenav').attr('href','chart.html?subject=' + subject)
