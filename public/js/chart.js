@@ -65,7 +65,7 @@ var dashboard; // used for timeline chart
 
 $(document).ready(function () {
 
-  $("#nav-title").attr('href', '/tlc')
+  $("#nav-title").attr('href', '/tlc-r')
 
   document.getElementById('homenav').innerHTML = subject.toUpperCase()
 

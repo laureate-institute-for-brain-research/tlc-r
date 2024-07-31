@@ -24,7 +24,7 @@ $(document).ready( () => {
   } else {
     $('#homenav').text(subject.toUpperCase());
 
-    $("#nav-title").attr('href', '/tlc')
+    $("#nav-title").attr('href', '/tlc-r')
     
     $('#homenav').attr('href','chart.html?subject=' + subject)
     $('#overall-count-nav-link').attr('href', 'overall.html?subject=' + subject);
