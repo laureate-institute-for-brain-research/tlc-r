@@ -199,7 +199,7 @@ function getTimelineData() {
 function filterCategory(category) {
   // console.log(category)
   if (category == 'Mental Health') {
-    category = 'Mental Health Tx'
+    category = 'Mental Health'
   }
   return category
 }
@@ -225,8 +225,11 @@ function drawTimelineChart(data) {
   var colorsp = [];
   var colorMap = {
     // should contain a map of category -> color for every category
-    'Drugs and Alcohol': color3[0],
-    'Mental Health Tx': color3[1],
+    'Direct Drugs and Alcohol': color3[0],
+    'Indirect Drugs and Alcohol': color5[0],
+    'Medical': color5[1],
+    'Medication': color5[2],
+    'Mental Health': color3[1],
     'Hobbies': color3[2],
     'People': color3[3],
     'Jobs': color3[4],
@@ -2069,9 +2072,10 @@ function drawEventsChart() {
 
                 // console.log(interface.getYLocation(currentrating))
                 line.style.display = 'block';
-                line.style.background = getColorFromRating(parseInt(currentrating))
+                line.style.background = getColorFromRating(parseInt(currentrating)) + "AA"
 
                 line.style.position = "absolute";
+                line.style.borderRadius = "0.9rem"
                 line.style.left = interface.getXLocation(age) + "px";
                 line.style.top = interface.getYLocation(currentrating) + "px";
                 line.style.height = '5px'
