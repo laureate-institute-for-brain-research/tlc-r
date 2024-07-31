@@ -38,6 +38,14 @@
             font-size: 17px;
         }
 
+        h1 {
+            color: white !important;
+        }
+
+        p {
+            color: white !important;
+        }
+
         #backgroundVideo {
             position: fixed;
             top: 0;
@@ -57,9 +65,10 @@
             margin: auto;
             /*left: 10%;*/
             /*top: 100;*/
-            background: rgba(255, 255, 255, 1);
+            background: rgba(0, 0, 0, 0.6);
             color: black;
-            width: 70%;
+            width: 100% !important;
+            height: 100% !important;
             /*height: 100%;*/
             padding: 10px;
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
@@ -88,6 +97,10 @@
             padding-left: 45%;
             bottom: 0;
             left: 0;
+        }
+
+        footer {
+            padding-top: 10%;
         }
 
         .container {
@@ -181,13 +194,23 @@
         } */
 
         .select-dropdown {
-            color: rgb(0, 0, 0) !important;
+            color: rgb(255, 255, 255) !important;
+            border-radius: 0.7rem;
+        }
+
+        li span {
+            background-clip: content-box;
+            box-shadow: inset 0 0 8px 2px black;
         }
 
         /* This is the dropdown color for the caret symbol */
         .caret {
-            fill: rgb(0, 0, 0) !important;
+            fill: rgb(255, 255, 255) !important;
         }
+
+        /* li {
+            background-color: rgba(255, 255, 255, 0.0) !important;
+        } */
 
         .pull-right {
 
@@ -195,9 +218,19 @@
         }
 
         span {
-            color: black !important;
+            /* background-color: rgba(37, 37, 37, 0.0) !important; */
+            color: rgb(0, 0, 0) !important;
 
         }
+
+        /* .disabled.selected span {
+            color: rgba(255, 255, 255, 0.0) !important;
+        }
+
+        .dropdown-content {
+            background-color: rgba(20, 20, 20, 0.5) !important;
+        } */
+
     </style>
 
 
@@ -227,10 +260,10 @@
 
 </head>
 
-<body style='background-color: white; padding-top: 30px;'>
-    <div class="content">
+<body style='background-color: white;'>
+    <div class="content" style='padding-top: 3%;'>
         <center>
-            <img src="public/LIBR_full_color_logo_highres.png"
+            <img src="public/LIBR_full_color_logo_white_highres.png"
                     height="45px">
         </center>
         <div style="text-align: center;">
@@ -273,7 +306,7 @@
             </center>
             <footer>
                 <br>
-                <p><a href="https://github.com/laureate-institute-for-brain-research/tlc-r">Git Hub Link</a></p>
+                <p><a href="https://github.com/laureate-institute-for-brain-research/tlc-r">GitHub Link</a></p>
                 <br>
                 <p>&copy; Copyright 2024 Laureate Institute for Brain Research
                 
@@ -288,6 +321,10 @@
     <!-- <video id="backgroundVideo" preload="auto" autoplay muted loop playbackRate=.5>
         <source src="https://res.cloudinary.com/laureate-institute-for-brain-research/video/upload/v1538520772/Life%20Chart/crop1.mp4" type="video/mp4"> Your browser does not support HTML5 video.
     </video> -->
+
+    <video id="backgroundVideo" preload="auto" autoplay muted loop playbackRate=.5>
+        <source src="https://www.dl.dropboxusercontent.com/s/fmk3qe1qi4xz0gi/Life%20Chart_crop1.mp4?raw=1" type="video/mp4"> Your browser does not support HTML5 video.
+    </video>
 
     <!-- this is my JS via cdn -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
