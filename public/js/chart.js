@@ -2077,7 +2077,7 @@ function drawEventsChart() {
                 line.style.position = "absolute";
                 line.style.borderRadius = "1rem"
                 line.style.left = interface.getXLocation(age) + "px";
-                line.style.top = (interface.getYLocation(currentrating) + 5) + "px";
+                line.style.top = (interface.getYLocation(currentrating) - 6) + "px";
                 line.style.height = '5px'
                 line.classList = 'durationLineAnimation'
 
