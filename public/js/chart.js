@@ -2068,7 +2068,7 @@ function drawEventsChart() {
                 // console.log('bLoc: ' + pointB)
 
                 finallinewidthpx = pointB - interface.getXLocation(age) // Filtered Duration Line
-                line.style.width = (finallinewidthpx - 5) + "px";
+                line.style.width = finallinewidthpx + "px";
 
                 // console.log(interface.getYLocation(currentrating))
                 line.style.display = 'block';
@@ -2077,7 +2077,7 @@ function drawEventsChart() {
                 line.style.position = "absolute";
                 line.style.borderRadius = "1rem"
                 line.style.left = interface.getXLocation(age) + "px";
-                line.style.top = interface.getYLocation(currentrating) + "px";
+                line.style.top = (interface.getYLocation(currentrating) + 5) + "px";
                 line.style.height = '5px'
                 line.classList = 'durationLineAnimation'
 
