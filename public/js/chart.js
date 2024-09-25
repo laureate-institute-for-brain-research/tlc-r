@@ -950,7 +950,7 @@ function getNumber(string) {
  * @param {Date} end 
  * @param {String} eventRating 
  */
-function getEventTooltipHTML(category, description, age, start, end, eventRating) {
+function getEventTooltipHTML(category, description, age, start, end, eventRating, event_name) {
   // body...
   var m_names = new Array("Jan", "Feb", "Mar",
     "Apr", "May", "Jun", "Jul", "Aug", "Sept",
@@ -979,25 +979,25 @@ function getEventTooltipHTML(category, description, age, start, end, eventRating
   }
 
 
-  html = `<div style="padding:9px 12px 12px 9px;font-family: Lucida Grande; ">
-        <table style="border-collapse: collapse;">
-          <tr style="border-bottom: thin solid gray;">
-            <th style="font-size: 12px;"><center><strong>${category}</strong></center></th>
+  html = `<div style="padding:9px 12px 12px 9px;font-family: Lucida Grande; background-color: black; border-radius:0.2rem;">
+        <table style="border-collapse: collapse; border-color:black; background-color: black; border-radius:0.2rem;">
+          <tr>
+            <th style="font-size: 14px;color:white;"><center><strong>${event_name}</strong></center></th>
+          </tr>
+          <tr style="border-bottom: thin solid grey">
+            <th style="font-size: 12px;color:white;"><center>${description}</center></th>
           </tr>
           <tr>
-            <th style="font-size: 14px;"><center>${description}</center></th>
+            <th style="font-size: 12px;color:white;"><center><strong>${category}: <strong>${eventRating}</center></th>
           </tr>
           <tr>
-            <th style="font-size: 14px;"><center><strong>Rating: <strong>${eventRating}</center></th>
+            <td style="padding:5px 5px 5px 5px;font-size: 12px; color:white;"><center><strong>Age: </strong>${age}</center></td>
           </tr>
           <tr>
-            <td style="padding:5px 5px 5px 5px;font-size: 12px;"><center><strong>Age: </strong>${age}</center></td>
+            <td style="padding:5px 5px 5px 5px;font-size: 12px;color:white;"><center><strong></strong><span id = 'duration_format'>${duration}</span></center></td>
           </tr>
           <tr>
-            <td style="padding:5px 5px 5px 5px;font-size: 12px;"><center><strong></strong><span id = 'duration_format'>${duration}</span></center></td>
-          </tr>
-          <tr>
-            <td style="padding:5px 5px 5px 5px;font-size: 11px;"><center><i>${start_and_enddate}</i></center></td>
+            <td style="padding:5px 5px 5px 5px;font-size: 11px;color:white;"><center><i>${start_and_enddate}</i></center></td>
           </tr>
         </table></div>`
   //console.log(html)
@@ -1091,8 +1091,8 @@ function getStyle(start, end) {
     duration = moment.duration(enddate.diff(startdate))
     diffDays = duration.days()
 
-
-    return 'point { shape-type: star; size: 9; sides: ' + diffDays + '; visible: true; }'
+    return ''
+    // return 'point { shape-type: star; size: 9; sides: ' + diffDays + '; visible: true; }'
   }
 }
 
@@ -1195,6 +1195,8 @@ function drawEventsChart() {
   // Some raw data (not necessarily accurate)
   var progressBar = document.getElementById("eventProgess");
 
+  generateInfoTable()
+
   $.get('public/subjectsData/' + subject + '/' + subject + '-events-rev.csv', function (data) {
     finalEventData = [];
 
@@ -1221,7 +1223,7 @@ function drawEventsChart() {
       age = parseInt(row[0])
 
 
-      periodrating = getNewMoodRating(age, getNumber(row[15]))[1]
+      periodrating = getNewMoodRating(age, getNumber(row[16]))[1]
 
       eventtype = row[1]
 
@@ -1270,13 +1272,15 @@ function drawEventsChart() {
       ten = getNumber(row[11])
       tennew = newPoints['10']
 
-      agenew = getNewMoodRating(age, getNumber(row[15]))[0]
+      agenew = getNewMoodRating(age, getNumber(row[16]))[0]
 
 
       startdate = returnDateObj(row[12])
       enddate = returnDateObj(row[13])
 
-      eventdes = filterDescription(row[14])
+      event_name = row[14]
+
+      eventdes = filterDescription(row[15])
 
       // If Age is null, there should be a start date.
       //
@@ -1323,34 +1327,35 @@ function drawEventsChart() {
           }
         }
       }
-      onetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, one)
-      twotooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, two)
-      threetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, three)
-      fourtooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, four)
-      fivetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, five)
-      sixtooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, six)
-      seventooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, seven)
-      eighttooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, eight)
-      ninetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, nine)
-      tentooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, ten)
+      onetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, one, event_name)
+      twotooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, two, event_name)
+      threetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, three, event_name)
+      fourtooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, four, event_name)
+      fivetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, five, event_name)
+      sixtooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, six, event_name)
+      seventooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, seven, event_name)
+      eighttooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, eight, event_name)
+      ninetooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, nine, event_name)
+      tentooltip = getEventTooltipHTML(eventtype, eventdes, age, startdate, enddate, ten, event_name)
 
-      annotext = getthreeword(eventdes)
+      // annotext = getthreeword(event_name)
+      annotext = event_name
 
       if (enddate == "") {
         enddate = "NA"
       }
       finalRow = [
         agenew,
-        onenew, onetooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        twonew, twotooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        threenew, threetooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        fournew, fourtooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        fivenew, fivetooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        sixnew, sixtooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        sevennew, seventooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        ewightnew, eighttooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        ninenew, ninetooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
-        tennew, tentooltip, getthreeword(eventdes), eventdes, getStyle(startdate, enddate),
+        onenew, onetooltip, event_name, eventdes, getStyle(startdate, enddate),
+        twonew, twotooltip, event_name, eventdes, getStyle(startdate, enddate),
+        threenew, threetooltip, event_name, eventdes, getStyle(startdate, enddate),
+        fournew, fourtooltip, event_name, eventdes, getStyle(startdate, enddate),
+        fivenew, fivetooltip, event_name, eventdes, getStyle(startdate, enddate),
+        sixnew, sixtooltip, event_name, eventdes, getStyle(startdate, enddate),
+        sevennew, seventooltip, event_name, eventdes, getStyle(startdate, enddate),
+        ewightnew, eighttooltip, event_name, eventdes, getStyle(startdate, enddate),
+        ninenew, ninetooltip, event_name, eventdes, getStyle(startdate, enddate),
+        tennew, tentooltip, event_name, eventdes, getStyle(startdate, enddate),
         periodrating,
         eventtype,
       ]
@@ -1592,6 +1597,7 @@ function drawEventsChart() {
 
     ages = []
 
+    console.log(finalEventData)
     finalEventData.forEach((row, idx) => {
       ages.push(row[0])
     })
@@ -1619,17 +1625,23 @@ function drawEventsChart() {
     // Iterate over the duplicates
     //  These are key = duplicated ages, and values that are arrays of mood ratings
     // age : [rating, rating]
+    console.log(duplicatesDict)
     for (var age in duplicatesDict) {
       findDuplicates(duplicatesDict[age]).forEach((row, idx) => {
         console.log({
           age: age,
-          rating: row + .5
+          rating: row
+          // rating: row + .5
         })
         console.log(returnIndex(finalEventData, parseInt(age), row))
         rowidx = returnIndex(finalEventData, parseInt(age), row).row
         colidx = returnIndex(finalEventData, parseInt(age), row).col
 
+        // finalEventData[rowidx][colidx] = row + 0.3
+        console.log("TESTING HERE")
+        console.log(finalEventData)
         finalEventData[rowidx][colidx] = row + 0.3
+        finalEventData[rowidx][0] = parseInt(age) + 0.2
 
       })
     }
@@ -1924,8 +1936,9 @@ function drawEventsChart() {
 
       for (var i = 0; i < fileArray.length; i++) {
         row = fileArray[i]
-        eventdes = filterDescription(row[14])
-        annotext = getthreeword(eventdes)
+        eventdes = filterDescription(row[15])
+        // annotext = getthreeword(eventdes)
+        annotext = event_name
         if (columnLabel == annotext) {
           return row[0]
         }
@@ -1942,7 +1955,7 @@ function drawEventsChart() {
 
       for (var i = 0; i < fileArray.length; i++) {
         row = fileArray[i]
-        eventdes = filterDescription(row[14])
+        eventdes = filterDescription(row[15])
         annotext = getthreeword(eventdes)
         if (columnLabel == annotext) {
           for (var j = 2; j <= 11; j++) {
@@ -2434,4 +2447,19 @@ function changeTimelineTitle(startAge, endAge) {
   $(document).ready(function () {
     $('#epochtitle').html("Age: " + startAge + ' - ' + endAge);
   })
+}
+
+function generateInfoTable() {
+  $.get('public/subjectsData/' + subject + '/' + subject + '-info-rev.csv', function (data) {
+    fileArray = data.split(',');
+
+    infoTable = document.getElementById('subjectDescription')
+
+    let tableIdx = 1
+    fileArray.forEach((x) => {
+      tableSlot = document.getElementById(`tableItem${tableIdx}`)
+      tableSlot.innerText = x
+      tableIdx++
+    })
+  });
 }

@@ -38,7 +38,7 @@
             <a class="dropdown-item" href="chart.html?subject=Case-4">Case 4</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" style="display: none;">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">Overall Graphs</a>
           <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 35px, 0px); top: 0px; left: 0px; will-change: transform;">
@@ -58,63 +58,85 @@
   </nav>
 
   <h1 id="subject" class="animate-bottom"></h1>
+  <center>
+    <p id="subjectDescription">
+      <div class="table-responsive-sm" style="width: 85%">
+          <table class="table table-hover table-sm" style="font-size: 13px;">
+              <tbody><tr>
+                  <td>Gender:</td>
+                  <td id="tableItem1"></td>
+              </tr>
+              <tr>
+                  <td>Self Reported Diagnosis:</td>
+                  <td id="tableItem2"></td>
+              </tr>
+              <tr>
+                  <td>Current Employment:</td>
+                  <td id="tableItem3"></td>
+              </tr>
+              <tr>
+                  <td>Relationship Status:</td>
+                  <td id="tableItem4"></td>
+              </tr>
+              <tr>
+                  <td>Sexuality</td>
+                  <td id="tableItem5"></td>
+              </tr>
+          </tbody></table>
+      </div>
+    </p>
+  </center>
 
   <div class="container">
-    <div class="row" style="padding: 10px; padding-bottom: 15px;">
+    <div class="row" style="padding: 10px; padding-bottom: 15px; display: none;">
       <div id="timeline_slider" style="width: 100%; "></div>
     </div>
 
-
     <div class="row">
-      <div class="col" style="max-width: 200px; min-width: 200px;">
-        <div id='eventsPicker' style="display: none;"></div>
-        <br>
-        <p>Event Type</p>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="good" checked>
-          <label class="custom-control-label" for="good">Good Events</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="bad" checked>
-          <label class="custom-control-label" for="bad">Bad Events</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="change" checked>
-          <label class="custom-control-label" for="change">Change Events</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="other" checked>
-          <label class="custom-control-label" for="other">Other Events</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="period" checked>
-          <label class="custom-control-label" for="period">Period Rating</label>
-          <input id='periodColor' class="jscolor" value="666666" style="width: 70px;">
-        </div>
-        <hr>
-        <p>Font Size</p>
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" id='font-decrease'>-</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" id='font-reset'>reset</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" id='font-increase'>+</a>
-          </li>
-        </ul>
-
-        <a id='download1' href="#" class="btn btn-secondary btn-lg">Download Charts</a>
+      <div id='eventsPicker' style="display: none;"></div>
+      <br>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="good" checked>
+        <label class="custom-control-label" for="good">Good Events</label>
       </div>
-
-      <div class="col-md-auto" style="min-width: 900px;">
-        <h2>Mood Ratings and Events</h2>
-        <div id='load1wrap' style="padding: 200px; padding-left: 100px;">
-          <div id='load1' class="loader">Loading...</div>
-        </div>
-        <div id='eventsChart' class="animate-bottom"></div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="bad" checked>
+        <label class="custom-control-label" for="bad">Bad Events</label>
       </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="change" checked>
+        <label class="custom-control-label" for="change">Change Events</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="other" checked>
+        <label class="custom-control-label" for="other">Other Events</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="period" checked>
+        <label class="custom-control-label" for="period">Overall Rating</label>
+        <input id='periodColor' class="jscolor" value="666666" style="width: 70px; display: none;">
+      </div>
+      <hr>
+      <!-- <p>Font Size</p> -->
+      <ul class="pagination" style="display: none;">
+        <li class="page-item">
+          <a class="page-link" href="#" id='font-decrease'>-</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" id='font-reset'>reset</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" id='font-increase'>+</a>
+        </li>
+      </ul>
+      <a id='download1' href="#" class="btn btn-secondary btn-lg" style="display: none;">Download Charts</a>
+    </div>
+    <div class="row" style="min-width: 900px;">
+      <h2>Mood Ratings and Events</h2>
+      <div id='load1wrap' style="padding: 200px; padding-left: 100px;">
+        <div id='load1' class="loader">Loading...</div>
+      </div>
+      <div id='eventsChart' class="animate-bottom"></div>
     </div>
     <hr>
 
