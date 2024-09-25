@@ -1,79 +1,71 @@
-Age,Event Type,1,2,3,4,5,6,7,8,9,10,Start Date,End Date,Event Description,Period Rating
-0,Period,,,,,,,,,,,,,,9
-1,Period,,,,,,,,,,,,,,9
-2,Period,,,,,,,,,,,,,,9
-3,Period,,,,,,,,,,,,,,9
-4,Period,,,,,,,,,,,,,,9
-5,Period,,,,,,,,,,,,,,5
-6,Period,,,,,,,,,,,,,,5
-7,Period,,,,,,,,,,,,,,5
-8,Period,,,,,,,,,,,,,,5
-9,Period,,,,,,,,,,,,,,5
-10,Period,,,,,,,,,,,,,,5
-11,Period,,,,,,,,,,,,,,5
-12,Period,,,,,,,,,,,,,,5
-13,Period,,,,,,,,,,,,,,5
-14,Period,,,,,,,,,,,,,,3
-15,Period,,,,,,,,,,,,,,3
-16,Period,,,,,,,,,,,,,,3
-17,Period,,,,,,,,,,,,,,3
-18,Period,,,,,,,,,,,,,,3
-19,Period,,,,,,,,,,,,,,3
-20,Period,,,,,,,,,,,,,,3
-21,Period,,,,,,,,,,,,,,3
-22,Period,,,,,,,,,,,,,,3
-23,Period,,,,,,,,,,,,,,3
-24,Period,,,,,,,,,,,,,,3
-25,Period,,,,,,,,,,,,,,5
-26,Period,,,,,,,,,,,,,,5
-27,Period,,,,,,,,,,,,,,5
-28,Period,,,,,,,,,,,,,,5
-29,Period,,,,,,,,,,,,,,5
-30,Period,,,,,,,,,,,,,,5
-31,Period,,,,,,,,,,,,,,5
-32,Period,,,,,,,,,,,,,,5
-33,Period,,,,,,,,,,,,,,5
-34,Period,,,,,,,,,,,,,,5
-35,Period,,,,,,,,,,,,,,4
-36,Period,,,,,,,,,,,,,,4
-37,Period,,,,,,,,,,,,,,4
-38,Period,,,,,,,,,,,,,,4
-39,Period,,,,,,,,,,,,,,4
-40,Period,,,,,,,,,,,,,,4
-41,Period,,,,,,,,,,,,,,4
-42,Period,,,,,,,,,,,,,,4
-43,Period,,,,,,,,,,,,,,4
-44,Period,,,,,,,,,,,,,,4
-45,Period,,,,,,,,,,,,,,2
-46,Period,,,,,,,,,,,,,,2
-47,Period,,,,,,,,,,,,,,2
-48,Period,,,,,,,,,,,,,,2
-49,Period,,,,,,,,,,,,,,2
-50,Period,,,,,,,,,,,,,,2
-51,Period,,,,,,,,,,,,,,2
-52,Period,,,,,,,,,,,,,,2
-53,Period,,,,,,,,,,,,,,2
-54,Period,,,,,,,,,,,,,,2
-55,Period,,,,,,,,,,,,,,
-56,Period,,,,,,,,,,,,,,
-4,Change Event,,,,,5,,,,,,3/27/65,,Father abandoned family.,
-17,Change Event,,,3,,,,,,,,7/1/78,8/1/78,Ran away from home,
-17,Good Event,,,,,,,,8,,,8/1/78,,Scholarship to private high school,
-23,Good Event,,,,,,,7,,,,5/1/84,,Graduated college,
-28,Change Event,,,,,,6,,,,,3/5/88,,Divorced 1st husband (Jacob),
-23,Change Event,,,,,,,,8,,,6/6/84,,Married 1st husband (Jacob),
-31,Change Event,,,,,,,,,,10,1/23/93,,"Son (Cooper) born, single mother",
-33,Change Event,,,,,,,,8,,,2/14/94,,Married 2nd husband (Edward),
-45,Change Event,,,3,,,,,,,,7/1/06,,Divorced 2nd husband (Edward),
-37,Change Event,,,,,,,,,,10,9/1/98,,Daughter born (Allison),
-39,Change Event,,,,,,,,8,,,1/3/01,,Son born (Daniel),
-49,Change Event,,,,,,,,,,10,1/1/10,,Granddaughter born (Arya),
-14,Other Event,,,,,5,,,,,,9/1/75,5/1/79,No running water or electricity in home,
-14,Bad Event,,2,,,,,,,,,1/1/76,,Classmate abducted and raped,
-15,Bad Event,1,,,,,,,,,,5/1/76,,Depression and SI began,
-51,Other Event,1,,,,,,,,,,4/1/12,2/1/15,Dating boyfriend (Brady),
-4,Bad Event,,,,4,,,,,,,3/27/65,11/1/79,"Getting evicted, moving often",
-19,Bad Event,1,,,,,,,,,,12/21/80,,Had abortion,
-18,Bad Event,,2,,,,,,,,,11/21/79,,Friend was molested,
-24,Bad Event,,,3,,,,,,,,1/1/85,4/15/87,Physically abused by husband (Jacob),
-54,Other Event,,,,,,5,,,,,8/1/14,,Stopped taking sertraline and buproprion,
+Age,Event Type,1,2,3,4,5,6,7,8,9,10,Start Date,End Date,Event,Description,Period Rating
+0,Period,,,,,,,,,,,,,,,10
+1,Period,,,,,,,,,,,,,,,10
+2,Period,,,,,,,,,,,,,,,10
+3,Period,,,,,,,,,,,,,,,10
+4,Period,,,,,,,,,,,,,,,10
+5,Period,,,,,,,,,,,,,,,10
+6,Period,,,,,,,,,,,,,,,10
+7,Period,,,,,,,,,,,,,,,8
+8,Period,,,,,,,,,,,,,,,8
+9,Period,,,,,,,,,,,,,,,8
+10,Period,,,,,,,,,,,,,,,8
+11,Period,,,,,,,,,,,,,,,4
+12,Period,,,,,,,,,,,,,,,4
+13,Period,,,,,,,,,,,,,,,4
+14,Period,,,,,,,,,,,,,,,4
+15,Period,,,,,,,,,,,,,,,2
+16,Period,,,,,,,,,,,,,,,2
+17,Period,,,,,,,,,,,,,,,2
+18,Period,,,,,,,,,,,,,,,2
+19,Period,,,,,,,,,,,,,,,2
+20,Period,,,,,,,,,,,,,,,2
+21,Period,,,,,,,,,,,,,,,2
+22,Period,,,,,,,,,,,,,,,2
+23,Period,,,,,,,,,,,,,,,2
+24,Period,,,,,,,,,,,,,,,2
+25,Period,,,,,,,,,,,,,,,2
+26,Period,,,,,,,,,,,,,,,9
+27,Period,,,,,,,,,,,,,,,9
+28,Period,,,,,,,,,,,,,,,9
+29,Period,,,,,,,,,,,,,,,9
+30,Period,,,,,,,,,,,,,,,9
+31,Period,,,,,,,,,,,,,,,9
+32,Period,,,,,,,,,,,,,,,9
+33,Period,,,,,,,,,,,,,,,9
+34,Period,,,,,,,,,,,,,,,9
+35,Period,,,,,,,,,,,,,,,9
+36,Period,,,,,,,,,,,,,,,
+37,Period,,,,,,,,,,,,,,,
+1,Good Event,,,,,,,,,9,,8/1/78,,Other,Playing with the dogs,
+1,Bad Event,,,3,,,,,,,,,5/1/79,Illness or Injury,Have been told I rolled off a bed and broke my hip - Aunt called CPS. Unknown what actually happened. Had surgery.,
+6,Good Event,,,,,,,,8,,,,,Friendship,Making more friends. Going to school.,
+10,Bad Event,,2,,,,,,,,,,,Arrests/Legal,Brothers caught by police stealing bikes. Dad made us watch him make a paddle out of a 2x4 because of this.,
+11,Bad Event,,2,,,,,,,,,,,Family-related,Sister said my mom beat her up so she ran away to AZ.,
+12,Bad Event,,,3,,,,,,,,,,Relocation/Moved,Brother got sent off to military school,
+12,Bad Event,,,3,,,,,,,,,,School-related,Bullied at school by popular girls. Led to physical fights at school.,
+13,Good Event,,,,,,,,8,,,,,Family-related,Brother moving out of house - would take me to do fun activities,
+14,Bad Event,,,,,,6,,,,,,,School-related,Got suspended for taking alcohol to school and getting all my friend drunk. 1 week suspension.,
+14,Bad Event,,,,4,,,,,,,,,Divorce,Parents divorce - they didn't talk about it,
+16,Bad Event,,,,,,6,,,,,,,Other,Started selling drugs,
+16,Bad Event,,,,,5,,,,,,,,Divorce,Cop had been harassing me (following me all over the place). Pulled me over for no seatbelt; searched car; found a small bag of dope and cigarettes. He let me go. Had to do a first time offenders course but no jail time. Later sued the cop for harassment - no outcome. He left me alone after that.,
+17,Good Event,,,,,,,,8,,,,,Relocation/Moved,Moving out of parents house,
+17,Bad Event,,,,,,6,,,,,,,Traumatic Experience,Gang violence at apartments - fights and gun violence,
+18,Good Event,,,,,,,,,,10,,,School-related,Graduated high school,
+18,Bad Event,,2,,,,,,,,,,,Family-related,Childs father forced me to manufacture drugs - even while pregnant. He was pure chaos; he was high all the time; very manipulative; mostly mental abuse but some physical,
+19,Good Event,,,,,,,,,,10,,,Birth in Family,Daughter born,
+20,Good Event,,,,,,,,,,10,,,School-related,Got daughter into private Christian school,
+20,Good Event,,,,,,,,,,10,,,Vacations,Took trip to Hawaii with drug money with daughter and daughters father,
+21,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Watched someone try to commit suicide by shooting himself in the face - he lived. Held his face and called ambulance.,
+22,Good Event,,,,,,,7,,,,,,Relocation/Moved,Getting and Staying in apartment in Owasso,
+22,Bad Event,,,,,,,7,,,,,,Other,Started working closely with gang members - selling guns and stolen vehicles also cooking and selling meth. Found out later that police starting to watch me during this time. I was making really good money and my daughter was happy despite what was happening. It was amazing to be away from her dad. ,
+22,Bad Event,,,,4,,,,,,,,,Traumatic Experience,After leaving daughters father had to hide out for 6 months in a cabin on a side of a hill because he was threatening to kill me. Still selling and cooking drugs but trying to find place for daughter and job.,
+23,Good Event,,,,,,,,,,10,,,Romantic Relationships,Met a sober guy - he was great. First sober person I ever really met.,
+24,Bad Event,1,,,,,,,,,,,,Other,Being watched and instead of paying bills started doing more illegal things. Got evicted from apartment --> took daughter to her grandma and asked her to take care of her. Started living out of stolen cars or in hotel rooms or at friends houses if I cooked for them.,
+25,Bad Event,1,,,,,,,,,,,,Arrests/Legal,Search warrant for hotel room - meth-lab guns etc. Arrested but friends bailed me out. I stole a car on the way out and sold it to pay off attorney. I went on the run until 2013 - avoiding court dates and hiding out from warrants. Looking back this was the thing that changed trajectory of my life and in hindsight is a good event (mood rating = 7),
+26,Good Event,,,,,,,,,,10,,,Birth in Family,Son Born,
+27,Good Event,,,,,,,,,,10,,,Other,Having an open relationship with my daughter. She is dealing with mental health and we are able to talk about it,
+28,Good Event,,,,,,,,8,,,,,Relocation/Moved,Friend and I moved out of shelter and got rental home together,
+30,Good Event,,,,,,,,,,10,,,Vacations,Going on vacations with friends and family,
+32,Good Event,,,,,,,,,,10,,,Sports,Coaching kids soccer team and cross-country,
+33,Good Event,,,,,,,,,,10,,,Goal Achievement,Bought my home,
