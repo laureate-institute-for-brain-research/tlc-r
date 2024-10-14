@@ -225,8 +225,7 @@ function drawTimelineChart(data) {
   var colorsp = [];
   var colorMap = {
     // should contain a map of category -> color for every category
-    'Direct Drugs and Alcohol': color3[0],
-    'Indirect Drugs and Alcohol': color5[0],
+    'Drugs and Alcohol': color3[0],
     'Medical': color5[1],
     'Medication': color5[2],
     'Mental Health': color3[1],
@@ -318,7 +317,7 @@ function drawTimelineChart(data) {
   data.addRows(finalData);
 
   var options = {
-    //width : '100%',
+    width : 1000,
     height: fileArray.length * 16,
     tooltip: {
       isHtml: true
@@ -353,7 +352,7 @@ function drawTimelineChart(data) {
         'cssClass': 'rangeSlider',
         'chartType': 'TimeLine',
         'chartOptions': {
-          //'width': 1000,
+          'width': 1000,
           'height': 35,
           'chartArea': {
             'width': '100%', // make sure this is the same for the chart and control so the axes align right
@@ -403,7 +402,7 @@ function drawTimelineChart(data) {
 
   });
 
-  categorySelectValues = ['Drugs and Alcohol', 'Hobbies', 'Jobs', 'Mental Health Tx', 'People', 'Residence', 'School']
+  categorySelectValues = ['Drugs and Alcohol', 'Hobbies', 'Jobs', 'Mental Health', 'People', 'Residence', 'School']
 
   categoryFilter.setState({
     'selectedValues': categorySelectValues
@@ -454,8 +453,6 @@ function drawTimelineChart(data) {
             if (rectangles[i].getAttribute('fill') == '#0652dd' && text.getAttribute('fill') == '#202020') {
               text.setAttribute('fill', '#ffffff')
             }
-
-
           }
         }
 
@@ -594,7 +591,7 @@ function drawTimelineChart(data) {
 
 
   $('#mental').change(function () {
-    catstring = 'Mental Health Tx'
+    catstring = 'Mental Health'
     if ($(this).is(":checked")) {
       //'checked' event code
       categorySelectValues.push(catstring)
@@ -754,9 +751,6 @@ function drawTimelineChart(data) {
   });
   $("#b").click(function () {
     //alert( "Handler for .click() called." );
-
-
-
     rangeSlider.setState({
       'range': {
         'start': periodDates('b', birthDate).start,
@@ -764,6 +758,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw()
+    timelineChart.draw();
     $('#epochtitle').html("Birth-Elementary School Years");
   });
   $("#c").click(function () {
@@ -775,6 +770,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw()
+    timelineChart.draw();
     $('#epochtitle').html("Elementary School Years");
   });
   $("#d").click(function () {
@@ -786,6 +782,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw();
+    timelineChart.draw();
     $('#epochtitle').html("Middle School Years");
   });
   $("#e").click(function () {
@@ -797,6 +794,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw()
+    timelineChart.draw();
     $('#epochtitle').html("High School Years");
   });
   $("#f").click(function () {
@@ -808,6 +806,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw();
+    timelineChart.draw();
     $('#epochtitle').html("Young Adult Years");
   });
   $("#g").click(function () {
@@ -819,6 +818,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw();
+    timelineChart.draw();
     $('#epochtitle').html("Age: 25-35 ");
   });
   $("#h").click(function () {
@@ -830,6 +830,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw()
+    timelineChart.draw();
     $('#epochtitle').html("Age: 35-45 ");
   });
   $("#i").click(function () {
@@ -841,6 +842,7 @@ function drawTimelineChart(data) {
       }
     })
     rangeSlider.draw()
+    timelineChart.draw();
     $('#epochtitle').html("Age: 45-55 ");
   });
 
@@ -856,7 +858,9 @@ function periodDates(period, birthdate) {
   var end;
   if (period == 'b') {
     start = moment(new Date(birthdate))._d
+    console.log(start)
     end = moment(birthdate).add(6, 'years')._d
+    console.log(end)
   } else if (period == 'c') {
     start = moment(birthdate).add(6, 'years')._d
     end = moment(birthdate).add(10, 'years')._d
@@ -1648,15 +1652,19 @@ function drawEventsChart() {
     // finalEventData[58][11] = 3.5
     // finalEventData[76][11] = 3.5
 
+    console.log("final event data:")
+    console.log(finalEventData)
+
     data.addRows(finalEventData)
 
-
+    console.log("data:")
+    console.log(data)
 
     var fontsize = 10
 
     var options = {
       height: 445,
-      width: 910,
+      width: 1200,
       enableInteractivity: true,
       focusTarget: 'datum',
       aggregationTarget: 'category',
@@ -1737,6 +1745,9 @@ function drawEventsChart() {
         viewWindow: {
           min: null,
           max: null
+        },
+        gridlines: {
+          color: 'white'
         },
         ticks: _.range(0, LC_AGE + 4, 3)
       },
@@ -1866,7 +1877,7 @@ function drawEventsChart() {
         },
         // Period Rating
         10: {
-          type: 'line',
+          type: 'scatter',
           lineWidth: 4,
           color: '#666666',
           visibleInLegend: false,
@@ -1921,7 +1932,7 @@ function drawEventsChart() {
     });
 
 
-    eventSelected = ['Good Event', 'Bad Event', 'Change Event', 'Other Event', 'Period']
+    eventSelected = ['Good Event', 'Bad Event', 'Period']
     eventCategoryFilter.setState({
       'selectedValues': eventSelected
     })
