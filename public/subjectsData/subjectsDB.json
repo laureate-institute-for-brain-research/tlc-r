@@ -5,18 +5,18 @@
         "birthdate" : "1994-10-18"
     },
     "CASE-2" : {
-        "group" : "Substance +",
+        "group" : "Example 2",
         "age" : 49,
         "birthdate" : "1975-02-01"
     },
     "CASE-3" : {
-        "group" : "Substance +",
-        "age" : 39,
-        "birthdate" : "1978-05-10"
+        "group" : "Example 3",
+        "age" : 59,
+        "birthdate" : "1965-04-29"
     },
     "CASE-1" : {
-        "group" : "Comorbid Depression + Anxiety",
-        "age" : 36,
+        "group" : "Example 1",
+        "age" : 37,
         "birthdate" : "1987-06-01"
     }
 }
