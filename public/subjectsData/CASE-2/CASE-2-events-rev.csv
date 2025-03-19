@@ -1,0 +1,91 @@
+Age,Event Type,1,2,3,4,5,6,7,8,9,10,Start Date,End Date,Event,Description,Period Rating
+0,Period,,,,,,,,,,,,,,,6
+1,Period,,,,,,,,,,,,,,,6
+2,Period,,,,,,,,,,,,,,,6
+3,Period,,,,,,,,,,,,,,,6
+4,Period,,,,,,,,,,,,,,,6
+5,Period,,,,,,,,,,,,,,,6
+6,Period,,,,,,,,,,,,,,,6
+7,Period,,,,,,,,,,,,,,,6
+8,Period,,,,,,,,,,,,,,,6
+9,Period,,,,,,,,,,,,,,,6
+10,Period,,,,,,,,,,,,,,,6
+11,Period,,,,,,,,,,,,,,,7
+12,Period,,,,,,,,,,,,,,,7
+13,Period,,,,,,,,,,,,,,,7
+14,Period,,,,,,,,,,,,,,,7
+15,Period,,,,,,,,,,,,,,,6
+16,Period,,,,,,,,,,,,,,,6
+17,Period,,,,,,,,,,,,,,,6
+18,Period,,,,,,,,,,,,,,,6
+19,Period,,,,,,,,,,,,,,,6
+20,Period,,,,,,,,,,,,,,,6
+21,Period,,,,,,,,,,,,,,,6
+22,Period,,,,,,,,,,,,,,,6
+23,Period,,,,,,,,,,,,,,,6
+24,Period,,,,,,,,,,,,,,,6
+25,Period,,,,,,,,,,,,,,,6
+26,Period,,,,,,,,,,,,,,,6
+27,Period,,,,,,,,,,,,,,,6
+28,Period,,,,,,,,,,,,,,,6
+29,Period,,,,,,,,,,,,,,,6
+30,Period,,,,,,,,,,,,,,,6
+31,Period,,,,,,,,,,,,,,,6
+32,Period,,,,,,,,,,,,,,,6
+33,Period,,,,,,,,,,,,,,,6
+34,Period,,,,,,,,,,,,,,,6
+35,Period,,,,,,,,,,,,,,,6
+36,Period,,,,,,,,,,,,,,,7
+37,Period,,,,,,,,,,,,,,,7
+38,Period,,,,,,,,,,,,,,,7
+39,Period,,,,,,,,,,,,,,,7
+40,Period,,,,,,,,,,,,,,,7
+41,Period,,,,,,,,,,,,,,,7
+42,Period,,,,,,,,,,,,,,,7
+43,Period,,,,,,,,,,,,,,,7
+44,Period,,,,,,,,,,,,,,,7
+45,Period,,,,,,,,,,,,,,,7
+46,Period,,,,,,,,,,,,,,,8
+47,Period,,,,,,,,,,,,,,,8
+48,Period,,,,,,,,,,,,,,,8
+49,Period,,,,,,,,,,,,,,,8
+1,Good Event,,,,,,,,,,10,2/1/75,2/1/86,Vacations,Frequented Disneyland with parents,
+2,Bad Event,,2,,,,,,,,,2/1/77,2/1/86,Traumatic Experience,Sexually abused by uncle and grandfather. Abuse by uncle started around ~2 and was ongoing. I was not around him much though. Abuse by grandfather started around ~5 and was ongoing. I was around him more.,
+4,Good Event,,,,,,,,,9,,,,Family-Related,Trip to drive-in with aunt and cousins to see Grease in convertible cadillac.,
+4,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Terrible domestic violence incident - mother injured and sent to hospital.,
+6,Bad Event,,,,4,,,,,,,,,Relocation/Moved,Evicted from home in CityA - had to abruptly move and leave personal belongings behind.,
+8,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Attempted attack on dad and uncle due to dad and uncle not completing "job" as part of organized crime. Family members barricaded themselves in restaurant.,
+8,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Had to flee house in the middle of the night to get away from mafia and get out of Florida. Could see flames in out side of mirror - not sure if it was in the driveway or part of the house.,
+8,Bad Event,1,,,,,,,,,,,,Death in Family,Maternal grandmother died,
+10,Bad Event,1,,,,,,,,,,,,Other,Ongoing domestic violence - Angry outbursts and spankings from dad. Cocaine and meth use by dad.,
+10,Good Event,,,,,,,,,,10,,,Goal Achievement, Won a dance competition,
+10,Good Event,,,,,,,,,,10,,,Birth in Family,Birth of Aunt's twins,
+10,Good Event,,,,,,,,,,10,,,Vacations,Snow-skiing and beach vacations,
+10,Good Event,,,,,,,,,9,,,,Vacations,Vacation to California beach and Magic Mountain with family,
+10,Good Event,,,,,,,,,9,,,,Friendships,Lots of fun social happenings during this time period,
+12,Bad Event,1,,,,,,,,,,,,Illness or Injury - Other,Father nearly died due to complications from major surgery. He was told he would never walk again so we were trying to prepare ourselves for that and he was very abuse verbally and using cocaine,
+14,Good Event,,,,,,,,,9,,,,School-related,First homecoming and first prom,
+14,Bad Event,,2,,,,,,,,,,,Family-related,Ongoing domestic violence at home. Started physically fighting with dad.,
+14,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Parents forced me to have an abortion. Had an older boyfriend (18 y/o) who was very angry and physically abused me for getting the abortion. Painful and awful and I thought I was going to hell.,
+16,Good Event,,,,,,,,8,,,,,Vacations,Vacation to CityC with friends,
+16,Bad Event,,,3,,,,,,,,,,Traumatic Experience,Close friends and boyfriend of my best friend committed armed robbery and killed someone. My best friend and I hid them out for a couple of days until the police found them.,
+16,Bad Event,1,,,,,,,,,,,,Relocation/Moved,Moved to Oklahoma - it was against my will and it felt like the end of the world.,
+18,Good Event,,,,,,,7,,,,,,Vacations,Multiple good vacations,
+18,Bad Event,1,,,,,,,,,,,,Death in Family,Death of Aunt,
+19,Bad Event,,2,,,,,,,,,,,Other,Mother left family and went to live with her family in California,
+19,Bad Event,1,,,,,,,,,,,,Arrests/Legal,Apprehended for interstate drug trafficking. My codependent boyfriend was nearly killed by police during the incident. Was incarcerated (held without bond) for 11 months. Co-dependent boyfriend was sentenced to 15 years.,
+20,Good Event,,,,,,,,,,10,,,Birth in Family,Birth of first 2 children (1995/1998),
+27,Bad Event,,2,,,,,,,,,,,Traumatic Experience,Boyfriend shot me up with meth IV against my will after I had been clean for multiple years. Led to full blown addiction for next couple of years.,
+27,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Boyfriend stabbed me. He kidnapped me. He shot a gun at me. He tried to run me and my children over with a vehicle. He physically and sexually abused me multiple times.,
+33,Good Event,,,,,,,,,,10,,,Birth in Family,Son Born,
+34,Bad Event,1,,,,,,,,,,,,Arrests/Legal,My father was arrested and sent to prison for 15 years for a crime he did not commit - manufacturing methamphetamine. He took a plea deal and plead guilty to avoid a jury trial where he probably would have received a life sentence.,
+35,Good Event,,,,,,,,,,10,,,Birth in Family,Granddaughter born,
+38,Good Event,,,,,,,,,,10,,,Other,Accepted in to WIR,
+39,Bad Event,1,,,,,,,,,,,,Other,Mother's home burned down. She and her husband and my granddaughter barely escaped but were not injured. All the pets were lost.,
+40,Good Event,,,,,,,,,,10,,,Family-related,Re-unified with all children - all children living in one home.,
+41,Bad Event,1,,,,,,,,,,,,Other,Brother was incarcerated and then escaped prison and was on the run for a couple of weeks.,
+41,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Daughter overdosed on opiates (heroin). The medics could not find a pulse and she was not breathing - it felt like time froze. She was able to be revived.,
+42,Good Event,,,,,,,,,,10,,,Relocation/Moved,Moved in to a beautiful home in a beautiful neighborhood,
+45,Bad Event,1,,,,,,,,,,,,Illness or Injury - Other,Dad almost died from COVID. Hospitalized and on vent. Long lasting effects.,
+46,Good Event,,,,,,,,,9,,,,Relocation/Moved,Daughter moved home from KY,
+46,Good Event,,,,,,,,8,,,,,Other,Bought a boat,

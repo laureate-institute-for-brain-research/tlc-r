@@ -1,0 +1,119 @@
+Age,Event Type,1,2,3,4,5,6,7,8,9,10,Start Date,End Date,Event,Description,Period Rating
+0,Period,,,,,,,,,,,,,,,10
+1,Period,,,,,,,,,,,,,,,10
+2,Period,,,,,,,,,,,,,,,10
+3,Period,,,,,,,,,,,,,,,10
+4,Period,,,,,,,,,,,,,,,10
+5,Period,,,,,,,,,,,,,,,10
+6,Period,,,,,,,,,,,,,,,10
+7,Period,,,,,,,,,,,,,,,10
+8,Period,,,,,,,,,,,,,,,10
+9,Period,,,,,,,,,,,,,,,10
+10,Period,,,,,,,,,,,,,,,10
+11,Period,,,,,,,,,,,,,,,8
+12,Period,,,,,,,,,,,,,,,8
+13,Period,,,,,,,,,,,,,,,8
+14,Period,,,,,,,,,,,,,,,8
+15,Period,,,,,,,,,,,,,,,6
+16,Period,,,,,,,,,,,,,,,6
+17,Period,,,,,,,,,,,,,,,6
+18,Period,,,,,,,,,,,,,,,6
+19,Period,,,,,,,,,,,,,,,8
+20,Period,,,,,,,,,,,,,,,8
+21,Period,,,,,,,,,,,,,,,8
+22,Period,,,,,,,,,,,,,,,8
+23,Period,,,,,,,,,,,,,,,8
+24,Period,,,,,,,,,,,,,,,8
+25,Period,,,,,,,,,,,,,,,8
+26,Period,,,,,,,,,,,,,,,4
+27,Period,,,,,,,,,,,,,,,4
+28,Period,,,,,,,,,,,,,,,4
+29,Period,,,,,,,,,,,,,,,4
+30,Period,,,,,,,,,,,,,,,4
+31,Period,,,,,,,,,,,,,,,4
+32,Period,,,,,,,,,,,,,,,4
+33,Period,,,,,,,,,,,,,,,4
+34,Period,,,,,,,,,,,,,,,4
+35,Period,,,,,,,,,,,,,,,4
+36,Period,,,,,,,,,,,,,,,3
+37,Period,,,,,,,,,,,,,,,3
+38,Period,,,,,,,,,,,,,,,3
+39,Period,,,,,,,,,,,,,,,3
+40,Period,,,,,,,,,,,,,,,3
+41,Period,,,,,,,,,,,,,,,3
+42,Period,,,,,,,,,,,,,,,3
+43,Period,,,,,,,,,,,,,,,3
+44,Period,,,,,,,,,,,,,,,3
+45,Period,,,,,,,,,,,,,,,3
+46,Period,,,,,,,,,,,,,,,9
+47,Period,,,,,,,,,,,,,,,9
+48,Period,,,,,,,,,,,,,,,9
+49,Period,,,,,,,,,,,,,,,9
+50,Period,,,,,,,,,,,,,,,9
+51,Period,,,,,,,,,,,,,,,9
+52,Period,,,,,,,,,,,,,,,9
+53,Period,,,,,,,,,,,,,,,9
+54,Period,,,,,,,,,,,,,,,9
+55,Period,,,,,,,,,,,,,,,9
+56,Period,,,,,,,,,,,,,,,8
+57,Period,,,,,,,,,,,,,,,8
+58,Period,,,,,,,,,,,,,,,8
+59,Period,,,,,,,,,,,,,,,8
+1,Bad Event,,,,,5,,,,,,,,Other,Family had to put down their dog. Was told was aggresive toward her and jumped into crib and tore up the bed. She hid in the closet.,
+2,Good Event,,,,,,,,,,10,,,Birth in Family,Younger brother was born,
+5,Good Event,,,,,,,,,,10,,,Sports-related,Was really good at sports. Going to finals in city and state.,
+5,Good Event,,,,,,,,,,10,,,Goal Achievement,Was in several art showcases - acrylics and pencil,
+6,Bad Event,,,,,5,,,,,,,,Death in Family,Maternal grandfather died of cancer,
+7,Bad Event,,,,,5,,,,,,,,Death in Family,Paternal Grandfather - Lived in CityA,
+11,Good Event,1,,,,,,,,,10,,,Sports-related,Won Grand Nationals in Go Karting,
+11,Good Event,1,,,,,,,,,10,,,Sports-related,Championship in Softball. Set some track and field records.,
+11,Good Event,1,,,,,,,,,10,,,Vacations,Traveled 3-4 times per year. Mom was very exciting - an adventurer.,
+12,Bad Event,,,,,,,,8,,,,,Family-related,Noticed there was something wrong in parent's marriage,
+12,Bad Event,,,,,,,7,,,,,,Conflict with others,Starting to notice that mom treated her differently and felt left out and rejected by her. Started decades of conflict.,
+13,Good Event,,,,,,,,,,10,,,Birth in Family,Nephew was born - was wonderful having him in the home,
+13,Bad Event,,,,,,,7,,,,,,Significant change in mood (not linked to any specific event),Started to become less confident in body - and has struggled with that since,
+14,Bad Event,,,,,5,,,,,,,,Other,Sister was married to somone who was using and was in and out of her life. Was griecing her sister not being in her life anymore.,
+15,Bad Event,,,,4,,,,,,,,,Divorce,Parents got divorced and were not happy with how they handled their trauma. Which hurt my brother who was living at home.,
+17,Good Event,,,,,,,,8,,,,,Relocation/Moved,Ran off to California in 1982 - Brother ratted her out about 6 months later and mom asked her to come home to finish high school. Moved home.,
+17,Good Event,,,,,,,7,,,,,,Sports-related,Junior Olympics for track and field,
+18,Good Event,,,,,,,7,,,,,,School-related,Graduated high school,
+18,Bad Event,,,,,,6,,,,,,,Arrests/Legal,Arrested on 4th of July for driving under the influence and put on probation,
+19,Good Event,,,,,,,,,,10,,,Family-related,Father moved to CityB,
+19,Bad Event,,,3,,,,,,,,,,Family-related,Parents never got back together and created a lot of animosities. Father was not handling his addiction to alcohol but blamed mother's affair for divorce. Mother wanted her to side with her.,
+20,Good Event,,,,,,,,,,10,,,Faith-related,Brother and his wife moved to City B,
+20,Good Event,,,,,,,,,,10,,,Goal Achievement,Growth in position as a graphic artist throughout several positions,
+23,Good Event,,,,,,,,,9,,,,Marriages,Had a great marriage. He was a good guy.,
+23,Good Event,,,,,,,,8,,,,,Birth in Family,Son was born,
+24,Good Event,,,,,,,,,,10,,,Birth in Family,Niece was born - brother's daughter,
+24,Bad Event,,,,,,6,,,,,,,Law Enforcement Interactions,Mother was arrested for counterfeiting and went to prison. The arrest was a bad event but ultimately it helped turn her life around and brought them closer.,
+24,Bad Event,1,,,,,,,,,,,,Death of loved one,Father killed in a car accident,
+26,Bad Event,,,,4,,,,,,,,,Death of loved one,Maternal grandmother died,
+27,Good Event,,,,,,,,,,10,,,Birth in Family,Brother had 2 more daughters,
+30,Bad Event,,,,4,,,,,,,,,Divorce,Divorced husband - wasn't happy about it but initiated the divorce,
+31,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Lost control over parenting obligations - was raising her son but after meeting the violent boyfriend started putting more burden on ex-husbands shoulders. By the time mother was diagnosed with cancer didn't bring son with her to CityC. Unsure about how it was going to affect mental stability.,
+32,Bad Event,1,,,,,,,,,,,,Domestic Violence,An abusive relationship with boyfriend. He beat me until I escaped to CityD. He came looking for me and her tried to set mothers house on fire. Dragged her back to CityB and escaped again and hid under a building. Finally got to a phone and called an old boyfrined who bought her a ticket back to CityC. Old boyfriend took her to CityD to get away.,
+33,Bad Event,1,,,,,,,,,,,,Death of loved one,Mother Died,
+33,Bad Event,1,,,,,,,,,,,,Illness or Injury - Other,Uncle called her and told her mother had cancer. Moved back to CityC.,
+35,Bad Event,1,,,,,,,,,,,,Traumatic Experience,Attempted to contact son and realized he was not longer in Texas - drove to Texas and he was no longer there. Does not find son until 2005. Begins a search for him.,
+35,Good Event,,,,,,,,,,10,,,Family Gathering,Visiting Sister - would visit about 1x per year to close a play she worked at for the winter.,
+36,Bad Event,1,,,,,,,,,,,,Domestic Violence,With guy who saved her from previous relationship. Wanted to commit suicide. He was verbally and mentally abusive.,
+37,Bad Event,1,,,,,,,,,,,,Death of loved one,Paternal grandmother dies,
+41,Good Event,,,,,,,,,,10,,,Goal Achievement,Found son and went to see him,
+42,Good Event,,,,,,,,,,10,,,Other,Son moves to CityC,
+44,Bad Event,1,,,,,,,,,,,,Illness or Injury - Other,Was dating a guy and house blew up while I was asleep. He was in a coma for a few weeks. The explosion blinded him.,
+45,Bad Event,1,,,,,,,,,,,,Domestic Violence,DV and sexual violence from significant other. Isolated me from anyone who loved me. Found me when I was homeless and kept coming back to the house I was squatting in.,
+46,Bad Event,1,,,,,,,,,,,,Illness or Injury - Other,Brother got out of prison and went back to cooking meth and being mean and using,
+47,Good Event,,,,,,,,,,10,,,Other,Arrested - Getting her away from the violence felt immediate relief that things would be okay.,
+48,Good Event,,,,,,,,,,10,,,Other,Women in Recovery Participant,
+49,Good Event,,,,,,,,,,10,,,Graduations,Graduated Women in Recovery - Made the entire 18 months without a sanction,
+49,Good Event,,,,,,,,,,10,,,Goal Achievement,Was hired by new job,
+49,Good Event,,,,,,,,,,10,,,Goal Achievement,Got a car,
+50,Bad Event,1,,,,,,,,,,,,Death of loved one,Cousin's daughter was killed. She was an alcoholic. Let her stay with me until she could get into 12 in 12. She got hit by a car.,
+52,Good Event,,,,,,,,,,10,,,Goal Achievement,Bought a house,
+54,Bad Event,,,,,,,7,,,,,,Health-related,Found out something was wrong with her heart,
+54,Bad Event,,2,,,,,,,,,,,Family-related,Things have gotten worse with brother - he has become angry and dependent upon families help and lies.,
+55,Bad Event,,,,4,,,,,,,,,Illness or Injury - Other,Friend who helped her throughout her addiction had a double stoke and was in a coma for 6 weeks.,
+55,Good Event,,,,,,,,,,10,,,Other,Son and niece and great-nephew living at her house.,
+56,Good Event,,,,,,,,,,10,,,Health-related,Had heart surgery,
+56,Good Event,,,,,,,,,,10,,,Vacations,Went to Mexico alone,
+56,Bad Event,,,,4,,,,,,,,,Health-related,Found out she needed heart surgery,

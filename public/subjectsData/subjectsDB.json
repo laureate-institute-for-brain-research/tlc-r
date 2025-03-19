@@ -1,0 +1,22 @@
+{
+    "CASE-4" : {
+        "group" : "Eating +",
+        "age" : 21,
+        "birthdate" : "1994-10-18"
+    },
+    "CASE-2" : {
+        "group" : "Example 2",
+        "age" : 49,
+        "birthdate" : "1975-02-01"
+    },
+    "CASE-3" : {
+        "group" : "Example 3",
+        "age" : 59,
+        "birthdate" : "1965-04-29"
+    },
+    "CASE-1" : {
+        "group" : "Example 1",
+        "age" : 37,
+        "birthdate" : "1987-06-01"
+    }
+}
